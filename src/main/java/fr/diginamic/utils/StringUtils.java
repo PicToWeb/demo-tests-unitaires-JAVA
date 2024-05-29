@@ -38,7 +38,7 @@ public final class StringUtils {
 			newcost[0] = j;
 
 			for (int i = 1; i < len0; i++) {
-				int match = (lhs.charAt(i - 1) == rhs.charAt(j - 1)) ? 0 : 1;
+				int match = (Character.toLowerCase(lhs.charAt(i - 1)) == Character.toLowerCase(rhs.charAt(j - 1))) ? 0 : 1;
 
 				int costReplace = cost[i - 1] + match;
 				int costInsert = cost[i] + 1;

@@ -17,7 +17,7 @@ class StringUtilsTest {
 	}
 	@Test
 	void testLevenshteinDistanceOk() {
-		assertEquals(2,StringUtils.levenshteinDistance("Sien", "chien"));
+		assertEquals(1,StringUtils.levenshteinDistance("machins", "machine"));
 	}
 
 }
