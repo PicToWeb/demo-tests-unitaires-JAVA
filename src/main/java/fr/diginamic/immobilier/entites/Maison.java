@@ -61,6 +61,9 @@ public class Maison {
 		double superficie = 0;
 		if(typePiece != "")
 			typePiece = capitalize(typePiece);
+		
+		if((typePiece == null) ||(typePiece ==""))
+			return 0;
 		for (int i = 0; i < pieces.length; i++) {
 			if (typePiece!=null && typePiece.equals(this.pieces[i].getType())) {
 				superficie = superficie + this.pieces[i].getSuperficie();
