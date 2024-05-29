@@ -20,15 +20,22 @@ public class SaisonTest {
 	@Test
 	public void valueOfLibelleTestNull() {
 
-		Saison test2 = Saison.valueOfLibelle(null);
-		assertNull(null, test2);
+		Saison test = Saison.valueOfLibelle(null);
+		assertNull(null, test);
+
+	}
+	@Test
+	public void valueOfLibelleTestEmpty() {
+
+		Saison test = Saison.valueOfLibelle("");
+		assertNull(null, test);
 
 	}
 	@Test
 	public void valueOfLibelleTestDefaultParams() {
 
-		Saison test3 = Saison.valueOfLibelle("ETE");
-		assertNull(null, test3);
+		Saison test = Saison.valueOfLibelle("ETE");
+		assertNull(null, test);
 
 	}
 
